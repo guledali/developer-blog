@@ -2,26 +2,26 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Cards from './Cards'
 
-const  AllPost  = ({ children }) => (
+const AllPost = ({ children }) => (
   <StaticQuery
     query={graphql`
-    query {
+      {
         dato {
           allArticles {
+            image {
+              url
+            }
             id
             title
-            createdAt: _createdAt
+            _publishedAt
           }
         }
       }
     `}
-    render={data => (
-      data.dato.allArticles.map((post, i) => (
-        <Cards cards={post} key={i} />
-      ))
-    )}
+    render={data =>
+      data.dato.allArticles.map((post, i) => <Cards cards={post} key={i} />)
+    }
   />
 )
 
-export default AllPost 
-
+export default AllPost
