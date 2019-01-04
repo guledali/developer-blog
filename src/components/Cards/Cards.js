@@ -33,9 +33,20 @@ class Cards extends Component {
                 Published at {formatDate(this.props.cards._createdAt)}
               </small>
             </CardText>
-            <Button color="warning" className="w-100">
-              Read more
-            </Button>
+            <>
+              <style type="text/css">
+                {`
+                .btn-warning {
+                  background-color: #f5da55;
+                  border-color: #f5da55;
+                  color: #323330
+                }
+              `}
+              </style>
+              <Button color="warning" className="w-100">
+                Read more
+              </Button>
+            </>
           </CardBody>
         </Card>
       </Col>
