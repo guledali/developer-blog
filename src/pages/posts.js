@@ -8,8 +8,12 @@ import Jumbo from '../components/Jumbo'
 const AllPage = () => {
   return (
     <div className="bg-light">
-      <NavbarDark />
-      <Jumbo />
+      <>
+        <div className="bg-dark">
+          <NavbarDark />
+          <Jumbo />
+        </div>
+      </>
       <Container>
         <Row>
           <Carding />
