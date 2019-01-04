@@ -14,7 +14,7 @@ const AllPost = ({ children }) => (
             }
             id
             title
-            _publishedAt
+            _createdAt
           }
         }
       }
