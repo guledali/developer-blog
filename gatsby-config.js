@@ -38,6 +38,8 @@ module.exports = {
         typeName: 'DatoCMS',
         fieldName: 'dato',
         url: 'https://graphql.datocms.com/',
+        // refetch interval in seconds
+        refetchInterval: 60,
         headers: {
           Authorization: process.env.DATOCMS_TOKEN,
         },

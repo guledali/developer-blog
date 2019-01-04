@@ -8,6 +8,7 @@ const AllPost = ({ children }) => (
       {
         dato {
           allArticles {
+            excerpt
             image {
               url
             }
