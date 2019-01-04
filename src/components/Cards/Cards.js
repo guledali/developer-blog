@@ -17,6 +17,7 @@ class Cards extends Component {
       <Col lg={4}>
         <Card className="mt-2">
           <CardImg
+            style={{ background: '#000' }}
             top
             width="100%"
             src={this.props.cards.image.url}
