@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand } from 'reactstrap'
 const NavbarDark = props => {
   return (
     <Navbar style={{ background: '#323330' }} className="shadow-sm">
-      <NavbarBrand className="text-warning">Developer blog</NavbarBrand>
+      <NavbarBrand style={{ color: '#f5da55' }}>Developer blog</NavbarBrand>
     </Navbar>
   )
 }
