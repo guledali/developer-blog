@@ -1,11 +1,18 @@
 import React from 'react'
-import AllPost from '../components/Cards/AllPostQuery'
+import Carding from '../components/Carding'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Row } from 'reactstrap'
 
-const AllPage= () => (
- <AllPost>
-     <h1>hello</h1>
- </AllPost>
-)
+const AllPage = () => {
+  return (
+    <div>
+      <Container>
+        <Row>
+          <Carding />
+        </Row>
+      </Container>
+    </div>
+  )
+}
 
 export default AllPage
