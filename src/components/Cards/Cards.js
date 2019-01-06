@@ -45,7 +45,7 @@ class Cards extends Component {
               </style>
               <Button color="warning" className="w-100">
                 <Link
-                  to="/SinglePost"
+                  to={`/SinglePost/${this.props.id}`}
                   className="text-dark text-decoration-none"
                 >
                   Read more
