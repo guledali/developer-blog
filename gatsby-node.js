@@ -14,7 +14,7 @@ exports.createPages = async ({ actions, graphql }) => {
   data.dato.allArticles.forEach(article => {
     actions.createPage({
       path: `/SinglePost/${article.id}`,
-      component: path.resolve(`./src/components/Article.js`),
+      component: path.resolve(`./src/components/SinglePost.js`),
       context: {
         articleID: article.id,
       },
