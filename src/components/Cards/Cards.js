@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import {
   Card,
   Button,
@@ -43,7 +44,12 @@ class Cards extends Component {
               `}
               </style>
               <Button color="warning" className="w-100">
-                Read more
+                <Link
+                  to="/SinglePost"
+                  className="text-dark text-decoration-none"
+                >
+                  Read more
+                </Link>
               </Button>
             </>
           </CardBody>

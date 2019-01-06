@@ -28,6 +28,7 @@ const AllPost = ({ children }) => (
           image={post.image.url}
           date={post._createdAt}
           short={post.excerpt}
+          id={post.id}
           key={i}
         />
       ))
@@ -40,5 +41,6 @@ Cards.propTypes = {
   date: PropTypes.string.isRequired,
   short: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 }
 export default AllPost
