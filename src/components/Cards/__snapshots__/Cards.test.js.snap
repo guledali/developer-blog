@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cards /> Display component with data 1`] = `
+<div
+  className="col-lg-4"
+>
+  <div
+    className="mt-2 card"
+  >
+    <img
+      alt="Card image cap"
+      className="card-img-top"
+      style={
+        Object {
+          "background": "#000",
+        }
+      }
+      width="100%"
+    />
+    <div
+      className="card-body"
+    >
+      <div
+        className="font-weight-bold card-title"
+      />
+      <p
+        className="card-text"
+      />
+      <p
+        className="card-text"
+      />
+      <style
+        type="text/css"
+      >
+        
+                .btn-warning {
+                  background-color: #f5da55;
+                  border-color: #f5da55;
+                  color: #323330
+                }
+              
+      </style>
+      <button
+        aria-label={null}
+        className="w-100 btn btn-warning"
+        onClick={[Function]}
+      >
+        <a
+          className="text-dark text-decoration-none"
+          href="/SinglePost/undefined"
+        >
+          Read more
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+`;
