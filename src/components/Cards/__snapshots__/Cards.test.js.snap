@@ -10,6 +10,7 @@ exports[`<Cards /> Display component with data 1`] = `
     <img
       alt="Card image cap"
       className="card-img-top"
+      src="https://www.datocms-assets.com/8778/1546791237-php-example.png"
       style={
         Object {
           "background": "#000",
@@ -22,13 +23,24 @@ exports[`<Cards /> Display component with data 1`] = `
     >
       <div
         className="font-weight-bold card-title"
-      />
+      >
+        Part of "When PHP Framework Sucks" series
+      </div>
       <p
         className="card-text"
-      />
+      >
+        When PHP Framework Sucks Series: How not to shape your app in the shape of the framework
+      </p>
       <p
         className="card-text"
-      />
+      >
+        <small
+          className="text-muted"
+        >
+          Published at 
+          2018-12-21
+        </small>
+      </p>
       <style
         type="text/css"
       >
@@ -47,7 +59,7 @@ exports[`<Cards /> Display component with data 1`] = `
       >
         <a
           className="text-dark text-decoration-none"
-          href="/SinglePost/undefined"
+          href="/SinglePost/592737"
         >
           Read more
         </a>

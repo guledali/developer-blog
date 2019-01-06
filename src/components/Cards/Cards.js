@@ -29,9 +29,9 @@ class Cards extends Component {
             </CardTitle>
             <CardText>{this.props.short}</CardText>
             <CardText>
-              {/* <small className="text-muted">
+              <small className="text-muted">
                 Published at {formatDate(this.props.date)}
-              </small> */}
+              </small>
             </CardText>
             <>
               <style type="text/css">
