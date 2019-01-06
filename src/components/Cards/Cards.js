@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import {
   Card,
   Button,
@@ -20,17 +19,17 @@ class Cards extends Component {
             style={{ background: '#000' }}
             top
             width="100%"
-            src={this.props.cards.image.url}
+            src={this.props.image}
             alt="Card image cap"
           />
           <CardBody>
             <CardTitle className="font-weight-bold">
-              {this.props.cards.title}
+              {this.props.title}
             </CardTitle>
-            <CardText>{this.props.cards.excerpt}</CardText>
+            <CardText>{this.props.short}</CardText>
             <CardText>
               <small className="text-muted">
-                Published at {formatDate(this.props.cards._createdAt)}
+                Published at {formatDate(this.props.date)}
               </small>
             </CardText>
             <>
@@ -52,16 +51,6 @@ class Cards extends Component {
       </Col>
     )
   }
-}
-
-Cards.propTypes = {
-  cards: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    excerpt: PropTypes.string.isRequired,
-    image: PropTypes.shape({
-      url: PropTypes.string.isRequired,
-    }),
-  }),
 }
 
 export default Cards
