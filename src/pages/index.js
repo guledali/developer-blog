@@ -1,33 +1,22 @@
-import { graphql } from "gatsby"
-import React from "react"
-import dateformat from "dateformat"
+import React from 'react'
+import Carding from '../components/Carding'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Row } from 'reactstrap'
+import NavbarDark from '../components/Navbar'
+import Jumbo from '../components/Jumbo'
 
-export default ({ data }) => (
-  <div>
-    <h1>My Gatsby Blog</h1>
-    <p>
-      <a href="https://www.gatsbyjs.org/packages/gatsby-source-graphql/">
-        Using gatsby-source-graphql
-      </a>
-    </p>
-    {data.dato.allArticles.map((article, i) => (
-      <a key={i} href={`/article/${article.id}`}>
-        <h2>
-          {dateformat(article.createdAt, `fullDate`)} - {article.title}
-        </h2>
-      </a>
-    ))}
+export default () => (
+  <div className="bg-light">
+    <>
+      <div className="bg-dark">
+        <NavbarDark />
+        <Jumbo />
+      </div>
+    </>
+    <Container>
+      <Row>
+        <Carding />
+      </Row>
+    </Container>
   </div>
 )
-
-export const query = graphql`
-  query {
-    dato {
-      allArticles {
-        id
-        title
-        createdAt: _createdAt
-      }
-    }
-  }
-`

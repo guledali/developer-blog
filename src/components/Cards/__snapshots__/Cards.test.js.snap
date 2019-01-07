@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cards /> Display component with data 1`] = `
+<div
+  className="col-lg-4"
+>
+  <div
+    className="mt-2 card"
+  >
+    <img
+      alt="Card image cap"
+      className="card-img-top"
+      src="https://www.datocms-assets.com/8778/1546791237-php-example.png"
+      style={
+        Object {
+          "background": "#000",
+        }
+      }
+      width="100%"
+    />
+    <div
+      className="card-body"
+    >
+      <div
+        className="font-weight-bold card-title"
+      >
+        Part of "When PHP Framework Sucks" series
+      </div>
+      <p
+        className="card-text"
+      >
+        When PHP Framework Sucks Series: How not to shape your app in the shape of the framework
+      </p>
+      <p
+        className="card-text"
+      >
+        <small
+          className="text-muted"
+        >
+          Published at 
+          2018-12-21
+        </small>
+      </p>
+      <style
+        type="text/css"
+      >
+        
+                .btn-warning {
+                  background-color: #f5da55;
+                  border-color: #f5da55;
+                  color: #323330
+                }
+              
+      </style>
+      <button
+        aria-label={null}
+        className="w-100 btn btn-warning"
+        onClick={[Function]}
+      >
+        <a
+          className="text-dark text-decoration-none"
+          href="/SinglePost/592737"
+        >
+          Read more
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+`;
