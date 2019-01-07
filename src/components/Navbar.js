@@ -1,15 +1,17 @@
 import React from 'react'
-import { Navbar, NavbarBrand } from 'reactstrap'
+import { Navbar } from 'reactstrap'
 import { Link } from 'gatsby'
 
 const NavbarDark = props => {
   return (
     <Navbar style={{ background: '#323330' }} className="shadow-sm">
-      <NavbarBrand style={{ color: '#f5da55' }}>
-        <Link to="/" style={{ color: '#f5da55', textDecoration: 'none' }}>
-          Developer blog
-        </Link>
-      </NavbarBrand>
+      <Link
+        to="/"
+        style={{ color: '#f5da55', textDecoration: 'none' }}
+        className="navbar-brand"
+      >
+        Developer blog
+      </Link>
     </Navbar>
   )
 }
