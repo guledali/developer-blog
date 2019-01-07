@@ -22,7 +22,7 @@ gatsby develop
 http://localhost:8000
 ```
 
-5. Create .env file and the line
+5. Create .env file and then add the line
 ```
 DATOCMS_TOKEN = 43dfd260341ed054856963707977a1
 ```
