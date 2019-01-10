@@ -8,7 +8,7 @@ import {
   CardTitle,
   CardText,
   CardBody,
-  Col,
+  Col
 } from 'reactstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -49,7 +49,7 @@ storiesOf(`Components`, module).add(`smallCards`, () => (
               to={`/SinglePost/`}
               className="text-dark text-decoration-none"
             >
-              Read more
+              Small change
             </Link>
           </Button>
         </>
