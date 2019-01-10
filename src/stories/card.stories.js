@@ -49,7 +49,7 @@ storiesOf(`Components`, module).add(`smallCards`, () => (
               to={`/SinglePost/`}
               className="text-dark text-decoration-none"
             >
-              Small change
+              Read more
             </Link>
           </Button>
         </>
