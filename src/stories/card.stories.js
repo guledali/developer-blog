@@ -12,8 +12,11 @@ import {
 } from 'reactstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { withKnobs, text } from '@storybook/addon-knobs'
 
-storiesOf(`Components`, module).add(`smallCards`, () => (
+const stories = storiesOf('Components', module)
+stories.addDecorator(withKnobs)
+stories.add(`smallCards`, () => (
   <Col lg={4}>
     <Card className="mt-2">
       <CardImg
@@ -25,14 +28,13 @@ storiesOf(`Components`, module).add(`smallCards`, () => (
       />
       <CardBody>
         <CardTitle className="font-weight-bold">
-          Part of "When PHP Framework Sucks" series
+          {text('Title', 'Part of When PHP Framework Sucks series')}
         </CardTitle>
         <CardText>
-          When PHP Framework Sucks Series: How not to shape your app in the
-          shape of the framework
+          {text('desc', 'When PHP Framework Sucks Series: How not to shape your app in the shape of the framework')}
         </CardText>
         <CardText>
-          <small className="text-muted">Published at 2018-12-21</small>
+          <small className="text-muted">{text('Date', 'Published at 2018-12-21')}</small>
         </CardText>
         <>
           <style type="text/css">
@@ -56,4 +58,4 @@ storiesOf(`Components`, module).add(`smallCards`, () => (
       </CardBody>
     </Card>
   </Col>
-))
+)).addDecorator(withKnobs)
