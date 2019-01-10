@@ -9,10 +9,13 @@ import {
   CardImg,
   CardText,
   CardBody,
-  CardTitle,
+  CardTitle
 } from 'reactstrap'
+import { withKnobs, text } from '@storybook/addon-knobs'
 
-storiesOf(`Components`, module).add(`bigCard`, () => (
+const stories = storiesOf('Components', module)
+stories.addDecorator(withKnobs)
+stories.add(`bigCard`, () => (
   <Container fluid={true}>
     <Row>
       <Col lg={{ offset: 2, size: 8 }}>
@@ -26,7 +29,7 @@ storiesOf(`Components`, module).add(`bigCard`, () => (
           <CardBody>
             <CardTitle>
               <h3 className="text-center">
-                Part of "When PHP Framework Sucks" series
+                {text('Titel', 'Part of When PHP Framework Sucks series')}
               </h3>
             </CardTitle>
             <CardText className="p-2">
@@ -52,4 +55,4 @@ storiesOf(`Components`, module).add(`bigCard`, () => (
       </Col>
     </Row>
   </Container>
-))
+)).addDecorator(withKnobs)
