@@ -1,0 +1,19 @@
+
+language: node_js
+
+env:
+  - DATOCMS_TOKEN = 43dfd260341ed054856963707977a1
+  
+os:
+  - linux
+  - osx
+
+node_js:
+  - 'node'
+  - 'lts/*'
+  - '7'
+  - '8'
+
+script:
+  - npm install
+  - npm run test
