@@ -57,12 +57,14 @@ exports[`<Cards /> Display component with data 1`] = `
         className="w-100 btn btn-warning"
         onClick={[Function]}
       >
-        <a
-          className="text-dark text-decoration-none"
-          href="/SinglePost/592737"
-        >
-          Read more
-        </a>
+        <span>
+          <a
+            className="text-dark text-decoration-none"
+            href="/SinglePost/592737"
+          >
+            Read more
+          </a>
+        </span>
       </button>
     </div>
   </div>
