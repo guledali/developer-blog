@@ -32,7 +32,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "jest",
+    "test": "CI=true jest--watchAll --env=node",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
